@@ -1,0 +1,83 @@
+.header {
+    width: 100%;
+    height: 15vh;
+    /* background-color: black; */
+     /* border: 1px solid;  */
+    position: absolute !important;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bg-dark {
+    background-color: #594a42!important;
+}
+
+#Header1 .bg-white {
+    background-color: #b3a16d !important;
+    color: #F1F8FF;
+}
+#Header1{
+    position: relative;
+    z-index: 2;
+}
+
+.me-3:hover{
+    color: #7c6a55;
+}
+.navIMG {
+    width: 150px;
+    margin-left: 3rem;
+}
+
+.navIMG>img {
+    width: 100%;
+}
+@media only screen and (max-width: 400px) {
+    .navIMG>img {
+        width: 70%;
+    } 
+    
+  }
+
+.menuIcon {
+    display: none;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .header>ul {
+        display: none;
+    }
+    .css-i4bv87-MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+}
+
+    .menuIcon {
+        display: block;
+        position: relative;
+        right: 20px;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+    .display-none{
+        display: none;
+    }
+}
+
+.top-btn:hover{
+    background-color: #7c6a55 !important;
+}
+.top-btn{
+    font-size: 0.8rem ;
+}
+.top-btn-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-link{
+    color: #b3a16d !important;
+}

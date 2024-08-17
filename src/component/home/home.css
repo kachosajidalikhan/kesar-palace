@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Warnock';
+    src: url('../../../public/Helvetica.ttf') format('opentype');
+}
+
+.video-container {
+    position: relative;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Optional: to darken the video background */
+  }
+  .display-3 {
+    font-family: "Warnock" !important;
+    font-size: 40px;
+}
+@media only screen and (max-width: 650px) {
+  .display-3{
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .section-title{
+    font-size: 0.7rem !important;
+  }  
+  
+}
+@media only screen and (max-width: 400px) {
+  .btn{
+    font-size: 0.7rem !important;
+  }  
+  
+}
+
+
+
+
+.review-main {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  z-index: 1;
+  height: 120vh;
+  text-align: center;
+  overflow: hidden; /* To prevent any overflow issues */
+}
+
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  background-image: url('/public/img/IMG-20240723-WA0023.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.reviews-container {
+  position: relative;
+  padding: 20px 10px 0px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.review-card {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+  width: 100%; /* Changed from 50% to 100% to fit smaller screens */
+  max-width: 600px; /* Set a max-width to avoid overly wide cards on larger screens */
+  margin: 0 auto 10px auto; /* Centering the card and spacing it out */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  background-color: #00000083;
+}
+
+.review-rating {
+  font-size: 18px;
+  color: #b3a16d;
+}
+
+.review-card h3 {
+  margin-top: 0;
+}
+
+.review-card p {
+  margin: 5px 0;
+  word-wrap: break-word;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .review-card {
+      width: 90%;
+  }
+  
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .review-rating {
+      font-size: 15px;
+  }
+
+  .review-card {
+      padding: 10px; 
+  }
+  .review-btn{
+    font-size: 0.5rem;
+  }
+  .review-main {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    height: 150vh;
+    text-align: center;
+    overflow: hidden; /* To prevent any overflow issues */
+  }
+}
+

@@ -1,0 +1,50 @@
+.tr-heading {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    width: 22%;
+    border-bottom: 3px solid;
+    margin: auto;
+    height: 7vh;
+    color: black;
+}
+
+.transaction-card {
+    width: 80%;
+    margin: auto;
+
+}
+.transaction-card .card-body .table-responsive .table{
+    color: #ffff;
+}
+
+@media screen and (max-width:550px){
+    .tr-heading {
+
+        width: 75%;
+
+    }
+}
+@media screen and (max-width:280px){
+    .tr-heading {
+
+        width: 101%;
+
+    }
+}
+
+@media screen and (max-width:912px) and (min-width:768px){
+    .tr-heading {
+
+        width: 36%;
+
+    }
+}
+
+@media screen and (max-width:1024px) and (min-height:600px){
+    .tr-heading {
+
+        width: 25%;
+
+    }
+}

@@ -1,0 +1,15 @@
+.whatsapp-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .whatsapp{
+    width:auto;
+    /* position:absolute; */
+    position: fixed;
+    display: none;
+    right: 73px;
+    bottom: 67px;
+    z-index: 99;
+    background-color: transparent !important;
+
+  }

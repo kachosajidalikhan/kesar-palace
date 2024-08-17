@@ -1,0 +1,213 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Warnock';
+    background: #ffffff;
+}
+
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: 'Warnock';
+}
+
+.cont-review {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 100px;
+    background: #b3a16d;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+}
+
+h2 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid #594a42;
+    color: #594a42;
+}
+.review-option{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid #594a42;
+    color: #594a42;
+}
+
+.submit-review {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #594a42;
+    text-transform: uppercase;
+    color: #b3a16d;
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 36px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.thank-you-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #594a42;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .thank-you-container h1 {
+    color: #b3a16d;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you-container p {
+    color: #b3a16d;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /* color: #fff; */
+    cursor: pointer;
+  }
+  .btn:hover {
+    opacity: 0.8;
+    color: #b3a16d;
+  }
+
+
+  .review-main {
+    position: relative;
+    /* background-color: rgb(0, 0, 0); */
+    z-index: 1;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .reviews-container {
+    position: relative; 
+    padding: 10px;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+.show-review-card {
+    padding: 30px 30px 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 0px 3px 0px #594a42;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #594a42;
+    border-radius: 1px;
+    background-color: #00000005;
+    width: 29%;
+    margin: 0 auto;
+}
+.main-container{
+  padding: 16px;
+  border-radius: 1px;
+  box-shadow: #000 1px 0 3px 0;
+  width: 50%;
+  margin: 0 auto
+} 
+@media (max-width: 740px) {
+  .show-review-card {
+    padding: 30px 30px 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 0px 3px 0px #594a42;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #594a42;
+    border-radius: 1px;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+.main-container{
+  padding: 16px;
+  border-radius: 1px;
+  box-shadow: #000 1px 0 3px 0;
+  width: 100%;
+  margin: 0 auto
+}
+} 
+
+.review-rating {
+    font-size: 18px;
+    color: #b3a16d;
+}
+
+.show-review-card h3 {
+    margin-top: 0;
+}
+
+.show-review-card p {
+    margin: 7px 0;
+    word-wrap: break-word; /* Ensure long words are wrapped */
+    /* border-bottom:1px solid #594a42; */
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: row; /* Stack reviews vertically */
+    gap: 20px;
+    width: 100%;
+    flex-wrap:wrap;
+
+}
+  
+.user-name{
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.star-rating{
+  width: 50%;
+  display: flex;
+  column-gap: 23px;
+}
